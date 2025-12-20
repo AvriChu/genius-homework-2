@@ -14,11 +14,11 @@
   <body>
     <header>
       <div class="container">
-        <nav>
+        <nav class="nav-container">
           <a href="#"
             ><img src="./img/logo.svg" alt="Лого косметологічної клініки"
           /></a>
-          <ul>
+          <ul class="nav-links-list">
             <li class="nav-link">
               <a href="#about-us-section">Про нас</a>
             </li>
@@ -28,31 +28,29 @@
             </li>
             <li class="nav-link"><a href="#contacts-section">Контакти</a></li>
           </ul>
-          <div class="list-of-icons">
-            <ul>
-              <li>
-                <a href="tel:+380960000007" target="_blank">
-                  <img src="./img/phone.svg" alt="Іконка телефону"
-                /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <img src="./img/facebook.svg" alt="Іконка Фейсбуку"
-                /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <img src="./img/instagram.svg" alt="Іконка Істаграму"
-                /></a>
-              </li>
-            </ul>
-          </div>
+          <ul class="list-of-icons">
+            <li>
+              <a href="tel:+380960000007" target="_blank">
+                <img src="./img/phone.svg" alt="Іконка телефону"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./img/facebook.svg" alt="Іконка Фейсбуку"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./img/instagram.svg" alt="Іконка Істаграму"
+              /></a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
     <main>
       <section class="section-form hero-form">
-        <div class="container">
+        <div class="container hero-container">
           <p class="hero-small-text">Косметологічна клініка</p>
           <h1 class="main-tittle" lang="en">Beauty<br />Zone</h1>
           <button class="button-order" type="button">Замовити дзвінок</button>
@@ -63,29 +61,33 @@
         </div>
       </section>
       <section class="section-form about-us-section" id="about-us-section">
-        <div class="container">
-          <h2 class="section-tittle">
-            Перевтілюйтесь<br />в
-            <span class="access" lang="en">beauty zone!</span>
-          </h2>
-          <p class="change-text">
-            Наша косметологічна клініка пропонує вам професійні послуги з
-            догляду за шкірою обличчя та тіла.
-          </p>
-          <p class="change-text">
-            B <b lang="en">Beauty Zone</b> ми гарантуємо найвищі стандарти
-            якості та приємний сервіс. Наші косметологічні процедури та
-            препарати допоможуть вам підтримувати свою красу та молодість. З
-            нами краса назавжди!
-          </p>
-          <img src="./img/person1.jpg" alt="Фотографія людини до процедури" />
-          <img
-            src="./img/person2.jpg"
-            alt="Фотографія людини після процедури"
-          />
-          <img src="./img/star1.svg" alt="Перша зірка" />
-          <img src="./img/star2.svg" alt="Друга зірка" />
-          <img src="./img/star3.svg" alt="Третя зірка" />
+        <div class="container about-us-container">
+          <div class="about-us-content">
+            <h2 class="section-tittle">
+              Перевтілюйтесь<br />в
+              <span class="access" lang="en">beauty zone!</span>
+            </h2>
+            <p class="change-text">
+              Наша косметологічна клініка пропонує вам професійні послуги з
+              догляду за шкірою обличчя та тіла.
+            </p>
+            <p class="change-text">
+              B <b lang="en">Beauty Zone</b> ми гарантуємо найвищі стандарти
+              якості та приємний сервіс. Наші косметологічні процедури та
+              препарати допоможуть вам підтримувати свою красу та молодість.<br />З
+              нами краса назавжди!
+            </p>
+          </div>
+          <div class="about-us-imgs">
+            <img src="./img/person1.jpg" alt="Фотографія людини до процедури" />
+            <img
+              src="./img/person2.jpg"
+              alt="Фотографія людини після процедури"
+            />
+            <img src="./img/star1.svg" alt="Перша зірка" />
+            <img src="./img/star2.svg" alt="Друга зірка" />
+            <img src="./img/star3.svg" alt="Третя зірка" />
+          </div>
         </div>
       </section>
       <section class="section-form why-us-section" id="why-us-section">
@@ -93,38 +95,32 @@
           <h2 class="section-tittle center-tittle">
             Чому люди<br /><span class="access">обирають нас</span>
           </h2>
-          <ul>
-            <li>
-              <article>
-                <div class="info-box">
-                  <img src="./img/atom.svg" alt="Символ атому" />
-                  <p class="info-text">
-                    Всі наші косметологи мають вищу медичну освіту та стаж
-                    роботи від 5 років
-                  </p>
-                </div>
+          <ul class="article-list-why">
+            <li class="article-box-why">
+              <article class="info-article">
+                <img src="./img/atom.svg" alt="Символ атому" />
+                <p class="info-text">
+                  Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                  від 5 років
+                </p>
               </article>
             </li>
-            <li>
-              <article>
-                <div class="info-box">
-                  <img src="./img/wash.svg" alt="Символ косметики" />
-                  <p class="info-text">
-                    Використовуємо тільки професійне обладнання та косметику,
-                    перевірену часом
-                  </p>
-                </div>
+            <li class="article-box-why">
+              <article class="info-article">
+                <img src="./img/wash.svg" alt="Символ косметики" />
+                <p class="info-text">
+                  Використовуємо тільки професійне обладнання та косметику,
+                  перевірену часом
+                </p>
               </article>
             </li>
-            <li>
-              <article>
-                <div class="info-box">
-                  <img src="./img/crown.svg" alt="Символ корони" />
-                  <p class="info-text">
-                    Наша мета - підкреслити переваги та приховати недоліки, а не
-                    переробити
-                  </p>
-                </div>
+            <li class="article-box-why">
+              <article class="info-article">
+                <img src="./img/crown.svg" alt="Символ корони" />
+                <p class="info-text">
+                  Наша мета - підкреслити переваги та приховати недоліки, а не
+                  переробити
+                </p>
               </article>
             </li>
           </ul>
@@ -139,43 +135,38 @@
             <button type="button" class="button-with-arrow">
               <img src="./img/arrow.svg" alt="Кнопка перемикання" />
             </button>
-            <ul>
-              <li>
-                <article>
+            <ul class="article-list-servise">
+              <li class="article-box-procedurse">
+                <article class="article-service">
                   <div class="img-of-service">
-                    <img src="./img/services1.jpg" alt="Перший сервіс" />
                     <p class="text-service">Маски для обличчя</p>
                   </div>
                 </article>
               </li>
-              <li>
-                <article>
+              <li class="article-box-procedurse">
+                <article class="article-service">
                   <div class="img-of-service">
-                    <img src="./img/services2.jpg" alt="Другий сервіс" />
                     <p class="text-service">Ін'єкції для обличчя</p>
                   </div>
                 </article>
               </li>
-              <li>
-                <article>
+              <li class="article-box-procedurse">
+                <article class="article-service">
                   <div class="img-of-service">
-                    <img src="./img/services3.jpg" alt="Третій сервіс" />
                     <p class="text-service">Очищення обличчя</p>
                   </div>
                 </article>
               </li>
             </ul>
-            <div class="list-of-dots">
-              <ul>
-                <li><img src="./img/ellipse.svg" alt="Мале коло" /></li>
-                <li><img src="./img/ellipse.svg" alt="Мале коло" /></li>
-                <li><img src="./img/ellipse.svg" alt="Мале коло" /></li>
-              </ul>
-            </div>
             <button type="button" class="button-with-arrow">
               <img src="./img/arrow.svg" alt="Кнопка перемикання" />
             </button>
           </div>
+          <ul class="list-of-dots">
+            <li><img src="./img/ellipse.svg" alt="Мале коло" /></li>
+            <li><img src="./img/ellipse.svg" alt="Мале коло" /></li>
+            <li><img src="./img/ellipse.svg" alt="Мале коло" /></li>
+          </ul>
         </div>
       </section>
       <section class="section-form contacts-section" id="contacts-section">

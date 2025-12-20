@@ -96,6 +96,24 @@ header {
 .nav-link a {
   color: var(--main-color);
 }
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+.nav-links-list {
+  display: flex;
+  flex-grow: 1;
+  gap: 56px;
+  align-items: center;
+  justify-content: center;
+}
+.list-of-icons {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
 header .nav-link {
   font-size: 18px;
 }
@@ -148,12 +166,25 @@ header .nav-link {
 .section-form.hero-form .button-order {
   margin-bottom: 14px;
 }
+.container.hero-container {
+  max-width: 530px;
+  margin-left: 0;
+  padding: 0 0 0 106px;
+}
 .section-form.about-us-section {
   padding-top: 40px;
   padding-bottom: 200px;
 }
+.about-us-content {
+  max-width: 710px;
+}
 .section-form.about-us-section .change-text {
   margin-bottom: 40px;
+}
+.container.about-us-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
 }
 .section-form.why-us-section {
   padding: 176px 90px 48px 90px;
@@ -175,10 +206,23 @@ header .nav-link {
 .tittle-form .access {
   color: var(--tittle-color);
 }
-.info-box img {
-  margin-bottom: 8px;
+.article-list-why {
+  display: flex;
+  gap: 56px;
 }
-.info-box .info-text {
+.info-article {
+  border-radius: 32px;
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+  padding: 24px 32px;
+  height: 100%;
+}
+.article-box-why {
+  flex-basis: calc((100% - 112px) / 3);
+}
+.info-article img {
+  margin: 0 auto 8px auto;
+}
+.info-article .info-text {
   color: var(--black-color);
   line-height: 1.33;
   text-align: center;
@@ -194,14 +238,42 @@ header .nav-link {
 .section-tittle.center-tittle {
   text-align: center;
 }
+.article-list-servise {
+  display: flex;
+  gap: 16px;
+}
+.article-box-procedurse {
+  flex-basis: calc((100% - 32px) / 3);
+}
+.list-of-services {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+}
 .text-service {
   color: var(--white-color);
   font-size: 22px;
   line-height: 1.18;
+  padding: 372px 77px 32px 115px;
 }
 .tittle-form {
   font-weight: 600;
   font-size: 22px;
+}
+.article-service {
+  height: 100%;
+  border-radius: 4px 120px;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 47.4%,
+    rgba(1, 28, 68, 0.73) 82.66%,
+    #011c44 99.06%
+  );
+}
+.list-of-dots {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 .input-info {
   background: none;
