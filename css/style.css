@@ -119,6 +119,26 @@ header {
 header .nav-link {
   font-size: 18px;
 }
+.footer-icon-social svg {
+  height: 42px;
+  width: 42px;
+}
+.footer-icon-social {
+  fill: var(--white-color);
+}
+.footer-icon-social:hover {
+  fill: var(--tittle-color);
+}
+.head-icon-social svg {
+  height: 32px;
+  width: 32px;
+}
+.head-icon-social {
+  fill: var(--main-color);
+}
+.head-icon-social:hover {
+  fill: var(--tittle-color);
+}
 .nav-link a:hover,
 .adress-link a:hover,
 .small-politic-text a:hover {
@@ -138,9 +158,25 @@ header .nav-link {
   color: var(--small-color1);
   font-size: 13px;
 }
+.button-with-arrow svg {
+  width: 22px;
+  height: 22px;
+}
 .button-with-arrow {
-  background: none;
-  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--main-color);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--main-color);
+}
+.button-with-arrow:hover {
+  fill: var(--white-color);
+  background-color: var(--tittle-color);
+  border: 1px solid var(--white-color);
 }
 .button-order {
   font-family: Roboto, sans-serif;
@@ -163,7 +199,9 @@ header .nav-link {
   margin-bottom: 16px;
 }
 .section-form.hero-form {
-  padding: 123px 0 127px 106px;
+  padding-top: 123px;
+  padding-bottom: 127px;
+  /* padding: 123px 0 127px 106px; */
   background-image: url('../img/hero-background.png');
   background-repeat: no-repeat;
   background-position: right top;
@@ -172,9 +210,7 @@ header .nav-link {
   margin-bottom: 14px;
 }
 .container.hero-container {
-  max-width: 530px;
-  margin-left: 0;
-  padding: 0 0 0 106px;
+  padding-left: 100px;
 }
 .section-form.about-us-section {
   padding-top: 40px;
@@ -190,6 +226,21 @@ header .nav-link {
   display: flex;
   justify-content: space-between;
   gap: 32px;
+}
+.star:first-of-type {
+  fill: var(--tittle-color);
+  width: 40px;
+  height: 40px;
+}
+.star:nth-of-type(2) {
+  fill: var(--small-color1);
+  width: 16px;
+  height: 16px;
+}
+.star:nth-of-type(3) {
+  fill: var(--main-color);
+  width: 64px;
+  height: 64px;
 }
 .section-form.why-us-section {
   padding: 176px 90px 48px 90px;
@@ -225,8 +276,10 @@ header .nav-link {
 .article-box-why {
   flex-basis: calc((100% - 112px) / 3);
 }
-.info-article img {
-  margin: 0 auto 8px auto;
+.info-article svg {
+  margin-bottom: 8px;
+  height: 48px;
+  fill: var(--tittle-color);
 }
 .wave-background {
   background-image: url('../img/waves-background.svg');
@@ -235,7 +288,7 @@ header .nav-link {
   background-size: cover;
 }
 .person-img {
-  border-radius: 100%;
+  border-radius: 50%;
   box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
 }
 .info-article .info-text {
