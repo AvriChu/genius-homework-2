@@ -126,7 +126,8 @@ header .nav-link {
 .footer-icon-social {
   fill: var(--white-color);
 }
-.footer-icon-social:hover {
+.footer-icon-social:hover,
+.head-icon-social:hover {
   fill: var(--tittle-color);
 }
 .head-icon-social svg {
@@ -135,9 +136,6 @@ header .nav-link {
 }
 .head-icon-social {
   fill: var(--main-color);
-}
-.head-icon-social:hover {
-  fill: var(--tittle-color);
 }
 .nav-link a:hover,
 .adress-link a:hover,
@@ -172,6 +170,12 @@ header .nav-link {
   justify-content: center;
   align-items: center;
   fill: var(--main-color);
+  flex-shrink: 0;
+}
+.procedurs-lister {
+  display: flex;
+  gap: 32px;
+  align-items: center;
 }
 .button-with-arrow:hover {
   fill: var(--white-color);
@@ -195,13 +199,18 @@ header .nav-link {
   color: var(--main-color);
   border: 2px solid var(--tittle-color);
 }
+
+.form-container .button-order:hover {
+  background-color: transparent;
+  color: var(--white-color);
+  border: 2px solid var(--tittle-color);
+}
 .hero-small-text {
   margin-bottom: 16px;
 }
 .section-form.hero-form {
   padding-top: 123px;
   padding-bottom: 127px;
-  /* padding: 123px 0 127px 106px; */
   background-image: url('../img/hero-background.png');
   background-repeat: no-repeat;
   background-position: right top;
@@ -252,7 +261,8 @@ header .nav-link {
   padding: 48px 0;
 }
 .section-form.contacts-section {
-  padding: 48px 76px 96px 76px;
+  padding-top: 48px;
+  padding-bottom: 96px;
 }
 .section-tittle {
   font-weight: 700;
@@ -262,9 +272,15 @@ header .nav-link {
 .tittle-form .access {
   color: var(--tittle-color);
 }
+.how-to-find-us-bur .tittle-form {
+  color: var(--white-color);
+  text-align: center;
+}
 .article-list-why {
   display: flex;
   gap: 56px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .info-article {
   border-radius: 32px;
@@ -344,6 +360,12 @@ header .nav-link {
   gap: 24px;
   justify-content: center;
 }
+.list-of-dots li:first-child svg {
+  fill: var(--tittle-color);
+}
+.list-of-dots svg {
+  fill: var(--small-color1);
+}
 .input-info {
   background: none;
   padding: 18px 33px;
@@ -352,7 +374,10 @@ header .nav-link {
   border: 2px solid var(--small-color1);
   font-family: inherit;
   cursor: pointer;
-  margin-bottom: 16px;
+  color: var(--white-color);
+}
+.input-info:hover {
+  background-color: var(--small-color1);
 }
 .input-info::placeholder {
   color: var(--white-color);
@@ -361,12 +386,39 @@ header .nav-link {
 .access-to-potitic {
   color: var(--small-color1);
   font-size: 12px;
+  display: inline-block;
+  text-align: center;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.how-to-find-us-bur {
+  background: url('../img/footer-background.svg'), var(--main-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 48px 56px;
+  background-size: cover;
+  border-radius: 32px;
+  max-width: 423px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .how-to-find-us-bur .tittle-form {
   margin-bottom: 32px;
 }
 .how-to-find-us-bur .button-order {
   margin-bottom: 8px;
+}
+
+.form-and-map {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
 }
 /* Підвал */
 footer .nav-link a,
@@ -379,8 +431,38 @@ footer {
   background: url('../img/footer-background.svg'), var(--main-color);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .google-map {
-  border-radius: 32px !important;
+  border-radius: 32px;
   border: none;
+  flex-grow: 1;
+  max-width: 605px;
+  max-height: 481px;
+  width: 100%;
+}
+.footer-nav-address {
+  display: flex;
+  gap: 16px;
+}
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 16px;
+}
+.footer-nav a {
+  flex-basis: 50%;
+}
+.footer-nav ul,
+.footer-address ul {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-address li .footer-list-of-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
